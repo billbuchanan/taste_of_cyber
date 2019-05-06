@@ -8,9 +8,9 @@ The key learning outcomes of this unit are:
 * Understand how encryption is used to protect data.
 
 ## Morning Session
-This will provide an introduction to the course.
+This will investigate the usage of ciphers.
 
 ## Afternoon Session
-This will investigate some crime.
+This will investigate encryption methods.
 
 ## Presentator
