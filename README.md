@@ -9,7 +9,7 @@ Room: D10, Merchiston
 3. Tuesday 7 May: Networks. Robert
 4. Thursday 9 May: Splunk. Adrian.
 5. Tuesday 14 May: Crypto. Bill.
-6. Thursday 16 May: Digital Forensics. Sean. [Link](https://github.com/billbuchanan/taste_of_cyber/tree/master/05_digital_forensics)
+6. Thursday 16 May: Digital Forensics. Sean. [Link](https://github.com/smck1/taste_of_cyber/tree/master/05_digital_forensics)
 7. Thursday 21 May: CTP. ENUSEC.
 8. Thursday 23 May: Meet the experts. Basil.
 
