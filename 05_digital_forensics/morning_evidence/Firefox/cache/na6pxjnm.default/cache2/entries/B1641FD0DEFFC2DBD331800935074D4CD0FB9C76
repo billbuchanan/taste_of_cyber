@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta charset="UTF-8">
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="http://www.hotrod.com/xmlrpc.php">
+		<link rel="shortcut icon" href="http://www.hotrod.com/wp-content/themes/hot-rod/favicon.ico" >
+
+		<!-- Typekit fonts -->
+		<script>
+		  (function(d) {
+			var config = {
+			  kitId: 'qjw4keh',
+			  scriptTimeout: 3000,
+			  async: true
+			},
+			h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		  })(document);
+		</script>
+
+		<!-- Proximic -->
+		<script type='text/javascript'>
+			function getProdUrl(hrefUrl) {
+			    var regexParse = new RegExp('[a-z\-0-9]{2,63}\.[a-z\.]{2,5}$');
+			    var host = window.location.hostname;
+			    var urlParts = regexParse.exec(host);
+			    var env = host.replace(urlParts[0],'').slice(0, -1);
+				var subenv = env.substring(0,6);
+
+				//dev, stage, pre-prod
+			    if(subenv === 'hotrod') {
+			        host = ('www.hotrod.com');
+			    }
+			    if(typeof hrefUrl === "undefined" || hrefUrl === '') {
+			        hrefUrl = window.location.href;
+			    }
+			    return hrefUrl.replace(window.location.hostname, host);
+			}
+
+			var currentUrl = encodeURIComponent(getProdUrl());
+
+			(function (u) {
+				var f = "scr";
+				var e = (u ? ("url=" + u) : "");
+				document.write("<" + f + "ipt type='text/javascript' src='http://segment-data.zqtk.net/ten-9b59dd?" + e.replace(/\'/g, "") + "'></" + f + "ipt>");
+			})
+			((typeof (currentUrl) === "undefined") ? "" : currentUrl);
+		</script>
+
+		<!-- Chartbeat Script -->
+		<script type='text/javascript'>
+			var _sf_async_config = _sf_async_config || {};
+			var _sf_startpt=(new Date()).getTime();
+			_sf_async_config.uid = 42104;
+			_sf_async_config.domain = window.location.hostname;
+			_sf_async_config.useCanonical = true;
+		</script>
+
+		<title>2016 March Meet Gallery! Over 125 Fords From Sportsman to Altereds - Hot Rod Network</title>
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v3.2.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Dearbornâ€™s finest were well represented at the 2016 March Meet, with everything from street freaks to wheelstanders and Altereds taking to the quarter-mile."/>
+<meta name="news_keywords" content="" />
+<link rel="original-source" href="http://www.hotrod.com/articles/2016-march-meet-gallery-over-125-fords-from-sportsman-to-altereds/" />
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://www.hotrod.com/articles/2016-march-meet-gallery-over-125-fords-from-sportsman-to-altereds/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="2016 March Meet Gallery! Over 125 Fords From Sportsman to Altereds" />
+<meta property="og:description" content="Dearbornâ€™s finest were well represented at the 2016 March Meet, with everything from street freaks to wheelstanders and Altereds taking to the quarter-mile." />
+<meta property="og:url" content="http://www.hotrod.com/articles/2016-march-meet-gallery-over-125-fords-from-sportsman-to-altereds/" />
+<meta property="og:site_name" content="Hot Rod Network" />
+<meta property="article:publisher" content="https://www.facebook.com/hotrodmag" />
+<meta property="article:section" content="News" />
+<meta property="article:published_time" content="2016-03-07T12:19:00-08:00" />
+<meta property="article:modified_time" content="2016-12-15T17:14:22-08:00" />
+<meta property="og:updated_time" content="2016-12-15T17:14:22-08:00" />
+<meta property="og:image" content="http://st.hotrod.com/uploads/sites/21/2016/03/2016-march-meet-all-Fords-Mustangs-Cougars-Model-T20160303-20041.jpg" />
+<meta property="og:image:width" content="2040" />
+<meta property="og:image:height" content="1360" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Dearbornâ€™s finest were well represented at the 2016 March Meet, with everything from street freaks to wheelstanders and Altereds taking to the quarter-mile." />
+<meta name="twitter:title" content="2016 March Meet Gallery! Over 125 Fords From Sportsman to Altereds" />
+<meta name="twitter:site" content="@hotrodmagazine" />
+<meta name="twitter:image" content="http://st.hotrod.com/uploads/sites/21/2016/03/2016-march-meet-all-Fords-Mustangs-Cougars-Model-T20160303-20041.jpg" />
+<meta name="twitter:creator" content="@hotrodmagazine" />
+<meta property="DC.date.issued" content="2016-03-07T12:19:00-08:00" />
+<!-- / Yoast SEO Premium plugin. -->
+
+<script type="text/javascript">
+			(function(d) {
+				var k=d.createElement('script');
+				k.type='text/javascript';
+				k.src='http://www.hotrod.com/wp-content/mu-plugins/ten-shared/templates/userip.php';
+				k.async=true;
+				var s=d.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+			})(document);
+		</script><link rel="alternate" type="application/rss+xml" title="Hot Rod Network &raquo; Feed" href="http://www.hotrod.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hot Rod Network &raquo; Comments Feed" href="http://www.hotrod.com/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="Hot Rod Network &raquo; iCal Feed" href="http://www.hotrod.com/events/?ical=1" />
+<link rel="alternate" type="application/rss+xml" title="Hot Rod Network &raquo; 2016 March Meet Gallery! Over 125 Fords From Sportsman to Altereds Comments Feed" href="http://www.hotrod.com/articles/2016-march-meet-gallery-over-125-fords-from-sportsman-to-altereds/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.hotrod.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.4"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='ten-shared-css'  href='http://st.hotrod.com/wp-content/mu-plugins/ten-shared/assets/css/front.min.css?ver=20170216.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe_events-widget-this-week-pro-style-css'  href='http://st.hotrod.com/wp-content/plugins/events-calendar-pro/src/resources/css/widget-this-week-skeleton.min.css?ver=4.1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hotrod-css'  href='http://st.hotrod.com/wp-content/themes/hot-rod/assets/css/hotrod.min.css?ver=20170131.1' type='text/css' media='screen' />
+<script type='text/javascript' src='//a.postrelease.com/serve/load.js?async=true'></script>
+<script type='text/javascript' src='//cdn.optimizely.com/js/2317460028.js'></script>
+<link rel='https://api.w.org/' href='http://www.hotrod.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.hotrod.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.hotrod.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.4" />
+<link rel='shortlink' href='http://www.hotrod.com/?p=248678' />
+<link rel="alternate" type="application/json+oembed" href="http://www.hotrod.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.hotrod.com%2Farticles%2F2016-march-meet-gallery-over-125-fords-from-sportsman-to-altereds%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.hotrod.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.hotrod.com%2Farticles%2F2016-march-meet-gallery-over-125-fords-from-sportsman-to-altereds%2F&#038;format=xml" />
+<!-- Begin comScore Tag -->
+		<script type="text/javascript">
+			var _comscore = _comscore || [];
+			_comscore.push({ c1: "2", c2: "6034985" });
+			(function() {
+				var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<!-- End comScore Tag -->
+				<!-- BEGIN Krux Control Tag -->
+		<script class="kxct" data-id="Id97ddy2" data-timing="async" data-version="1.9" type="text/javascript">
+		  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+		  (function(){
+			var k=document.createElement('script');k.type='text/javascript';k.async=true;
+			var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+			k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" : (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=Id97ddy2";
+			var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+		  }());
+		</script>
+		<!-- END Krux Control Tag -->
+
+		<!-- Begin Krux Segments -->
+		<script class="kxint" type="text/javascript">
+			window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
+			(function(){
+				function retrieve(n){
+					var m, k='kx'+n;
+					if (window.localStorage) {
+						return window.localStorage[k] || "";
+					} else if (navigator.cookieEnabled) {
+						m = document.cookie.match(k+'=([^;]*)');
+						return (m && unescape(m[1])) || "";
+					} else {
+						return '';
+					}
+				}
+
+				Krux.user = retrieve('user');
+				Krux.segments = retrieve('segs') ? retrieve('segs').split(',') : [];
+
+				// DFP Premium
+				var dfpp = [];
+				var dfpp_omniture = [];
+
+				if (Krux.user) {
+					dfpp.push('kuid=' + Krux.user);
+				}
+
+				for (var i = 0; i < Krux.segments.length && i < 20; i++ ) {
+					dfpp.push('ksg=' + Krux.segments[i]);
+					dfpp_omniture.push(Krux.segments[i]);
+				}
+
+				window.kruxvalue = Krux.dfppKeyValues = dfpp.length ? dfpp.join(';') + ';' : '';
+				window.kruxomnivalue = dfpp_omniture.length ? dfpp_omniture.join(',') : '';
+			})();
+		</script>
+		<!-- END Krux Segments -->
+				<script type='text/javascript'>
+			var pbGlobal = pbGlobal || {};
+			pbGlobal.pageType = "Static Page";
+		</script>
+		<script type='text/javascript' src='//js-sec.indexww.com/ht/ls-tenauto.js'></script>
+		<script type="text/javascript">
+			var googletag = {cmd: []};
+		</script>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<link rel="amphtml" href="http://www.hotrod.com/articles/2016-march-meet-gallery-over-125-fords-from-sportsman-to-altereds/amp/" /><link rel="icon" href="http://st.hotrod.com/uploads/sites/21/2016/07/cropped-hotrod-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="http://st.hotrod.com/uploads/sites/21/2016/07/cropped-hotrod-300x300.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://st.hotrod.com/uploads/sites/21/2016/07/cropped-hotrod-300x300.jpg" />
+<meta name="msapplication-TileImage" content="http://st.hotrod.com/uploads/sites/21/2016/07/cropped-hotrod-300x300.jpg" />
+	<!--
+	generated in 2.572 seconds
+	273246 bytes batcached for 300 seconds
+-->
+</head>
+
+	<body class="single single-post postid-248678 single-format-standard">
+
+		<!-- Cxense script begin -->
+        <script type="text/javascript">
+
+            // Setup cXense gloabal vars
+            var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+            cX.callQueue.push(['setSiteId', '9222343371306561876']);
+            cX.callQueue.push(['sendPageViewEvent']);
+
+            // Add cXense script
+            (function(d,s,e,t){e=d.createElement(s);e.type='text/java'+s;e.async='async';
+àNÉÓ      X½¨]X½¨`=‚®,X½¨Â   b    :http://www.hotrod.com/articles/2016-march-meet-gallery-over-125-fords-from-sportsman-to-altereds/ necko:classified 1 strongly-framed 0 request-method GET response-head HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Age: 0
+Cache-Control: max-age=300, must-revalidate
+Content-Type: text/html; charset=UTF-8
+Date: Mon, 06 Mar 2017 18:16:57 GMT
+Last-Modified: Mon, 06 Mar 2017 18:16:57 +0000
+Link: <http://www.hotrod.com/wp-json/>; rel="https://api.w.org/", <http://www.hotrod.com/?p=248678>; rel=shortlink
+Server: Apache
+Vary: Cookie
+Via: 1.1 varnish
+X-Cache: MISS
+X-Cache-Served: 1
+X-Pingback: http://www.hotrod.com/xmlrpc.php
+X-Varnish: 794373652
+Content-Length: 273013
+ original-response-headers Accept-Ranges: bytes
+Age: 0
+Cache-Control: max-age=300, must-revalidate
+Content-Type: text/html; charset=UTF-8
+Date: Mon, 06 Mar 2017 18:16:57 GMT
+Last-Modified: Mon, 06 Mar 2017 18:16:57 +0000
+Link: <http://www.hotrod.com/wp-json/>; rel="https://api.w.org/"
+Link: <http://www.hotrod.com/?p=248678>; rel=shortlink
+Server: Apache
+Vary: Cookie
+Via: 1.1 varnish
+X-Cache: MISS
+X-Cache-Served: 1
+X-Pingback: http://www.hotrod.com/xmlrpc.php
+X-Varnish: 794373652
+Content-Length: 273013
+Connection: keep-alive
+ uncompressed-len 0   6u

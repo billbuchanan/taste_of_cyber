@@ -1,0 +1,466 @@
+/*=====================================================================
+   sophus3.com-Autoexpress-TC_5.4.6h-20161028m
+ =====================================================================*/   
+if (typeof s3_logging_active === 'undefined') {s3_logging_active = true; }
+
+/* =========================== Customisation ===========================*/
+var s3_site_id = 899;
+var s3_server_url = "auto.sophus3.com";
+var s3pw_server = "edx-uk.s3ae.com";
+var s3pw_id = 9;
+var _paq = _paq || [];
+var s3pw_values = s3pw_values || [];
+
+//solve random number in URL
+if (typeof s3_page_alias == 'undefined') {
+	s3_page_alias = window.location.pathname;
+}
+if (s3_page_alias.indexOf('/autotrader/car-details/') > -1) {
+	s3_page_alias = '/autotrader/car-details/';
+}
+
+//AE
+var s3ae_element = "s3_ae";
+var s3ae_server = "dennis.s3ae.com/ae";
+var s3ae_screenlimit = 550; // Minimum screen height or width
+var screenCheck = 0;
+
+function BlackListedPage() {
+	var i = 0;
+	var lstPages = [
+	'http://www.autoexpress.co.uk/', 'http://www.autoexpress.co.uk/honda', 'http://www.autoexpress.co.uk/nissan',
+	'http://www.dennis.co.uk/','http://www.autoexpress.co.uk/contact-us',
+	'http://www.dennis.co.uk/privacy','http://www.autoexpress.co.uk/about-auto-express',
+	'http://www.autoexpress.co.uk/rss-feeds', 'http://www.autoexpress.co.uk/authors',
+	'http://www.autoexpress.co.uk/sitemap','http://subscribe.autoexpress.co.uk/?utm_source=AEX%2Bbrand%2Bsite&utm_medium=footer&utm_campaign=sitewide_footer',
+	'http://subscribe.autoexpress.co.uk/gift-subscriptions/?utm_source=AEX%2Bbrand%2Bsite&utm_medium=homepage%2Bfooter&utm_campaign=gift_sub_footer',
+	'http://dennis.subscribeonline.co.uk/subscriptions/auto-express?offerCode=N1201AWEB&personalSubscription=true&__utma=1.1891486963.1340287090.1340287090.1340287090.1&__utmb=1.5.10.1340287090&__utmc=1&__utmx=-&__utmz=1.1340287090.1.1.utmcsr=AE|utmccn=1541_main%20site%20footer%20display%20ad|utmcmd=BAC|utmcct=sec&__utmv=-&__utmk=239367043',
+	'http://dennis.subscribeonline.co.uk/subscriptions/auto-express?offerCode=N1201AWEB&personalSubscription=true&__utma=1.1891486963.1340287090.1340287090.1340287090.1&__utmb=1.5.10.1340287090&__utmc=1&__utmx=-&__utmz=1.1340287090.1.1.utmcsr=AE|utmccn=1541_main%20site%20footer%20display%20ad|utmcmd=BAC|utmcct=sec&__utmv=-&__utmk=239367043',
+	'http://www.autoexpress.co.uk/vauxhall/zafira/93176/vauxhall-zafira-fires-owners-should-contact-their-dealer',
+	];
+
+	var pageInList = false;
+	var currentPage = document.URL.toLowerCase();
+
+	for (i = 0; i < lstPages.length; i = i + 1) {
+		if (currentPage == lstPages[i].toLowerCase()) pageInList = true;
+	}
+
+	var lstPattern = ["vauxhall/zafira/93176/vauxhall-zafira-fires-cause-of-recall-confirmed-as-dangerous-repairs"];
+
+	var currentPage = document.URL.toLowerCase();
+
+	for (i = 0; i < lstPattern.length; i = i + 1) {
+		if (currentPage.indexOf(lstPattern[i].toLowerCase()) !== -1) pageInList = true;
+	}
+
+	return pageInList;
+}
+
+function WhiteListedPage() {
+	var i = 0;
+	var lstPattern = ["astra","corsa","insignia","adam","zafira","agila","antara","meriva","mokka","cascada","vauxhall", "dacia"];
+
+	var pageInList = false;
+	var currentPage = document.URL.toLowerCase();
+
+	for (i = 0; i < lstPattern.length; i = i + 1) {
+		if (currentPage.indexOf(lstPattern[i].toLowerCase()) !== -1) pageInList = true;
+	}
+
+	return pageInList;
+}
+
+var s3ua = navigator.userAgent;
+var isMobile = {
+	Android: function() {return s3ua.match(/Android/i) ? true : false;},
+	Mobile: function() {return s3ua.match(/Mobile/i) ? true : false;},
+	BlackBerry: function() {return s3ua.match(/BlackBerry/i) ? true : false;},
+	iOSmob: function() {return s3ua.match(/iPhone|iPod/i) ? true : false;},
+	iOStab: function() {return s3ua.match(/iPad/i) ? true : false;},
+	Windows: function() {return s3ua.match(/IEMobile/i) ? true : false;},
+	any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOSmob() || isMobile.iOStab() || isMobile.Windows());},
+	mob: function() {return ((isMobile.Android() && isMobile.Mobile()) || isMobile.BlackBerry() || isMobile.iOSmob() || isMobile.Windows());},
+	tab: function() {return (isMobile.iOStab() || (isMobile.Android() && !isMobile.Mobile()));} //tablets filter
+};
+
+screenCheck = (screen.availHeight > screen.availWidth) ? screen.availWidth : screen.availHeight;
+
+if (readCookie('s3noae') == 1) {
+		s3noae = 1;
+}
+
+var s3cV = readCookie('s3ae2nd');
+if(s3cV == 'undefined'){
+	setCookie('s3ae2nd', 1);
+}else{
+	setCookie('s3ae2nd', ++s3cV);
+}
+if(s3cV < 3) s3noae = 1;
+
+if(typeof s3noae === 'undefined' && typeof s3ae_server !== 'undefined' && s3ae_server !== '' && typeof s3ae_element !== 'undefined' && s3ae_element !== '' && screenCheck > s3ae_screenlimit  && !isMobile.mob() && !BlackListedPage() && WhiteListedPage()){
+	try{
+		var _body = document.getElementsByTagName('body')[0];
+		var _div= document.createElement('div');
+		_div.id = s3ae_element;
+		_div.style = "display:none";
+		_body.appendChild(_div);
+
+		var s3script = document.createElement('script');
+		s3script.type = 'text/javascript';
+		s3script.text = "\/* <![CDATA[ *\/ var script = document.createElement(\"script\");script.async=true;script.type=\"text\/javascript\";var src = \"http:\/\/"+s3ae_server+"\/server.php?request=track&output=jcrpt&nse=\"+Math.random();setTimeout(\"script.src=src;document.getElementById('"+s3ae_element+"').appendChild(script)\",1);\/* ]]\> *\/"
+
+		var sophus3s = document.getElementsByTagName('script')[0];
+		sophus3s.parentNode.insertBefore(s3script, sophus3s);
+	}
+	catch(e){}
+}
+
+//PW
+if (typeof s3PWdone === 'undefined'){
+	
+	(function () {
+		var wlhr = window.location.href;
+		var wlpn = window.location.pathname;
+		var section = '', brand = 'No Brand', model = '', brandslash = 0, modellength = 0;
+		var arBrands = [{'str': 'audi', 'brand': 'Audi'}, {'str': 'bmw', 'brand': 'BMW'}, {'str': 'volkswagen', 'brand': 'Volkswagen'}, {'str': 'ford', 'brand': 'Ford'}, {'str': 'benz', 'brand': 'Mercedes-Benz'}, {'str': 'mercedes', 'brand': 'Mercedes-Benz'}, {'str': 'rover', 'brand': 'Land-Rover'}, {'str': 'hyundai', 'brand': 'Hyundai'}, {'str': 'nissan', 'brand': 'Nissan'}, {'str': 'mazda', 'brand': 'Mazda'}, {'str': 'volvo', 'brand': 'Volvo'}, {'str': 'skoda', 'brand': 'Skoda'}, {'str': 'vauxhall', 'brand': 'Vauxhall'}, {'str': 'kia', 'brand': 'Kia'}, {'str': 'citroen', 'brand': 'Citroen'}, {'str': 'toyota', 'brand': 'Toyota'}, {'str': 'renault', 'brand': 'Renault'}, {'str': 'peugeot', 'brand': 'Peugeot'}, {'str': 'mitsubishi', 'brand': 'Mitsubishi'}, {'str': 'seat', 'brand': 'Seat'}, {'str': 'jaguar', 'brand': 'Jaguar'}, {'str': 'suzuki', 'brand': 'Suzuki'}, {'str': 'honda', 'brand': 'Honda'}, {'str': 'mini', 'brand': 'Mini'}, {'str': 'chevrolet', 'brand': 'Chevrolet'}, {'str': 'fiat', 'brand': 'Fiat'}, {'str': 'dacia', 'brand': 'Dacia'}, {'str': 'porsche', 'brand': 'Porsche'}, {'str': 'subaru', 'brand': 'Subaru'}, {'str': 'lexus', 'brand': 'Lexus'}, {'str': 'bentley', 'brand': 'Bentley'}, {'str': 'jeep', 'brand': 'Jeep'}, {'str': 'romeo', 'brand': 'Alfa-Romeo'}, {'str': 'isuzu', 'brand': 'Isuzu'}, {'str': 'lotus', 'brand': 'Lotus'}, {'str': 'chrysler', 'brand': 'Chrysler'}, {'str': 'proton', 'brand': 'Proton'}, {'str': 'ferrari', 'brand': 'Ferrari'}, {'str': 'mg', 'brand': 'MG'}, {'str': 'maserati', 'brand': 'Maserati'}, {'str': 'tesla', 'brand': 'Tesla'}, {'str': 'ssangyong', 'brand': 'Ssangyong'}, {'str': 'smart', 'brand': 'Smart'}, {'str': 'daewoo', 'brand': 'Daewoo'}, {'str': 'daihatsu', 'brand': 'Daihatsu'}, {'str': 'aston', 'brand': 'Aston-Martin'}, {'str': 'infiniti', 'brand': 'Infiniti'}, {'str': 'mclaren', 'brand': 'McLaren'}] 
+			
+		for (i = 0; i < arBrands.length; i = i + 1) {
+			if (wlhr.indexOf(arBrands[i].str) >= 0) {
+				brand = arBrands[i].brand;
+				brandslash = wlhr.indexOf("/", wlhr.indexOf(arBrands[i].str));
+				modellength = wlhr.indexOf("/", brandslash + 1) - brandslash;
+				model = wlhr.substr(brandslash, modellength);
+				brand = brand + model;
+				break;
+			}
+		}
+		
+		if (wlpn === "/") { 
+			section = '/homepage';
+		} else if (wlhr.indexOf("review") >= 0) { 
+			section = '/car-reviews';
+		} else if (document.title.toLowerCase().indexOf("review") !== -1){
+			section = '/car-reviews';
+		} else { 
+			section = '/other_pages';
+		}
+		
+		section = section + '/-' +wlpn;
+		
+		s3pw_values = {'brand' : brand, 'section' : section};
+	})();
+	
+	_paq.push(['setDocumentTitle', s3pw_values.brand]);
+	_paq.push(['setCustomUrl', s3pw_values.section]);
+	_paq.push(["setCookieDomain", "*.autoexpress.co.uk"]);
+	_paq.push(["setDomains", ["*.autoexpress.co.uk"]]);
+	_paq.push(['enableLinkTracking']);
+	
+	var adblchk = 'adsense';
+	var _body = document.getElementsByTagName('body')[0];
+	var _div= document.createElement('div');
+	_div.id = adblchk;
+	_div.innerHTML = "<p>&nbsp;</p>";
+	_body.appendChild(_div);
+	
+	if (document.getElementById(adblchk) === null || document.getElementById(adblchk).offsetHeight <= 0) {
+		_paq.push(['setCustomVariable', 1, "Adblock", "Enabled", "visit"]);
+	} else {
+		_paq.push(['setCustomVariable', 1, "Adblock", "Disabled", "visit"]);
+	}
+	
+	_paq.push(['trackPageView']);
+	s3PWdone = 1;
+
+	(function() {
+	  try{  
+		var u = (('https:' === document.location.protocol) ? 'https' : 'http') + '://' + s3pw_server + '/';
+		_paq.push(['setTrackerUrl', u+'tracking.php']);
+		_paq.push(['setSiteId', s3pw_id]);
+		var d=document, sophus3g=d.createElement('script'), sophus3s=d.getElementsByTagName('script')[0];
+		sophus3g.type='text/javascript'; sophus3g.async=true; sophus3g.defer=true; sophus3g.src=u+'tracking.js'; sophus3s.parentNode.insertBefore(sophus3g,sophus3s);
+	  }catch( err ) {}
+	})();
+}
+
+//AE
+function AEBlackListed() {
+    var lstPattern = ["82.98.110.80/HITL/leads/"];
+    var lstDomains = [];
+    var lstPath = [];
+
+    var i = 0;
+
+    var currentPath = window.location.pathname.toLowerCase();
+    var currentURL = document.URL.toLowerCase();
+    var currentDomain = document.domain.toLowerCase();
+
+    for (i = 0; i < lstPattern.length; i = i + 1) {
+        if (currentURL.indexOf(lstPattern[i].toLowerCase()) !== -1) {
+            return true;
+        }
+    }
+    for (var i = 0; i < lstDomains.length; i = i + 1) {
+        if (currentDomain === lstDomains[i].toLowerCase()) {
+            return true;
+        }
+    }
+    for (i = 0; i < lstPath.length; i = i + 1) {
+        if (currentPath === lstPath[i].toLowerCase()) {
+            return true;
+        }
+    }
+    return false;
+}
+
+//AE
+if (!AEBlackListed()) {
+	s3load('//scripts.sophus3.com/s3s/dennis/autoexpress/ae', 's3AE.js');
+}
+
+/*=====================================================================*/
+
+/* ============================= Parameter =============================*/
+/*        PLEASE ASK sophus3 TO CUSTOMISE THE CODE BELOW !          */
+// attaches querystring parameters to the page alias
+
+// If you want to to use a limited list of parameters, activate the array below
+/*var usePair = [];
+usePair['campaignid'] = 1;
+usePair['advertiserid'] = 1;
+usePair['bannerid'] = 1;
+*/
+
+if (typeof tc_page_alias !== 'undefined') { //Compatibility with old version tagging
+    s3_page_alias = tc_page_alias;
+}
+
+var i = 0;
+var pair = [];
+
+if (typeof s3_page_alias !== 'undefined') {
+    if (location.search !== null && location.search.length > 1) {
+        if (typeof usePair === 'undefined') { // append entire query string
+            if (s3_page_alias.indexOf('?') === -1) {
+                s3_page_alias = s3_page_alias + location.search;
+            } else {
+                s3_page_alias = s3_page_alias + "&" + location.search.substring(1);
+            }
+        } else { // append selected parameters
+            var locSearch = location.search.substring(1);
+            var s3Params = locSearch.split('&');
+            var s3_params = '';
+            var nextAppender = (s3_page_alias.indexOf('?') === -1) ? '?' : '&';
+
+            for (i = 0; i < s3Params.length; i = i + 1) {
+                if (s3Params[i].indexOf('=') !== -1) {
+                    pair = s3Params[i].split('=');
+                    if (usePair[pair[0]] === 1) {
+                        s3_params += nextAppender + s3Params[i];
+                        nextAppender = '&'; // Change from ? to &
+                    }
+                }
+            }
+            s3_page_alias += s3_params;
+        }
+    }
+}
+
+/*=====================================================================*/
+
+/*=========================== StandardCode ============================*/
+/*             DO NOT MAKE CHANGES TO THE CODE BELOW !                */
+
+function s3load(path, script){
+	var scriptEl = document.createElement('script');
+	var scriptLst = document.getElementsByTagName('script')[0];
+
+	try{
+		scriptEl.type = 'text/javascript';
+		scriptEl.async = true;
+		scriptEl.src = path + '/' + script;
+		scriptLst.parentNode.insertBefore(scriptEl, scriptLst);
+	}
+	catch(e){}
+}
+
+var s3LogType = "s3def"; //default logtype
+
+function readCookie(c_name) {
+    var searchname = c_name + '=';
+    var ca = decodeURIComponent(document.cookie);
+	var c = "";
+	var i = 0;
+	ca= ca.split(';');
+    for (i = 0; i < ca.length; i = i + 1) {
+        c = ca[i];
+        while (c.charAt(0) === ' ') {c = c.substring(1, c.length); }
+        if (c.indexOf(searchname) === 0) {return c.substring(searchname.length, c.length); }
+    }
+    return 'undefined';
+}
+
+function setCookie(c_name, c_text, exdays, c_domain){
+	var  t_value = '', t_expires = '', exdate = new Date(), t_domain = '';
+	if (exdays) {
+		exdate.setDate(exdate.getDate() + exdays);
+		t_expires = '; expires=' + exdate.toUTCString();
+	}
+	if (c_domain) {
+		 t_domain = '; domain=' + c_domain;
+	}
+	t_value = escape(c_text) +  t_expires + '; path=/' + t_domain;
+	document.cookie = c_name + '=' + t_value;
+}
+
+function s3getParam(paramName) {
+    var qsParm = [];
+    var query = window.location.search.substring(1);
+    var parms = query.split('&');
+    var i = 0, pos =0, key = '', val = '', retval = '';
+    for (i = 0; i < parms.length; i = i + 1) {
+        pos = parms[i].indexOf('=');
+        if (pos > 0) {
+            key = parms[i].substring(0, pos);
+            val = parms[i].substring(pos + 1);
+            qsParm[key] = val;
+        }
+    }
+    retval = (typeof qsParm[paramName] !== 'undefined') ? qsParm[paramName] : ''; 
+    return retval;
+}
+
+function s3_configured() {
+    s3_tag_version = "5.4.6h";
+    s3_d_loc = window.location;
+    s3_sent = 0;
+    if (typeof s3_server_url === 'undefined' || typeof s3_site_id === 'undefined' ) return false;
+    s3_encfn = (typeof encodeURIComponent !== 'undefined' ? encodeURIComponent : escape);
+    s3_http = "http" + (s3_d_loc.href.substring(0,6) === "https:" ? "s": "") + "://";
+    s3_server_url = s3_http + s3_server_url;
+    s3_url = ( (typeof s3_page_alias !== 'undefined') ? s3_page_alias : s3_d_loc.href);
+    s3_referrer = (typeof s3_referrer !== 'undefined' && s3_referrer !== "" && s3_referrer !== null ? s3_referrer : (typeof document.referrer === 'undefined' ? s3_ud : (document.referrer === null ? "null" : (document.referrer === "" ? "empty" : document.referrer))));
+    s3_time = new Date().getTime();
+    return true;
+}
+
+function s3_log(alias, displayed) {
+	try {
+		s3LogType = "s3log";	
+
+		if (!s3_logging_active) return;
+		alias = s3_fixURL(alias);
+		s3_image = new Image();
+		s3_image.src = s3_get_log_URL_s3log("i", alias, new Date().getTime(), displayed);
+		
+		if (s3pw_server !="") {
+			_paq.push(['setCustomUrl', alias]);
+			_paq.push(['trackPageView']);
+		}
+	} catch (e) {}
+}
+function tc_log(alias, displayed) {
+    s3_log(alias, displayed);
+}
+
+function s3_get_log_URL(type,locn,time,displayed) {
+    if (typeof type === 'undefined' ) type = 'i';
+    var url = s3_server_url + "/" + type + "?siteID=" + s3_site_id;
+    if (type !=="d") {
+        url += "&ts=" + (typeof time !== 'undefined' ? time : s3_time);
+        var al = s3_isAlias(locn);
+        if (typeof s3_containers !== 'undefined') for (cc in s3_containers) url += "&ccID=" + s3_containers[cc];
+        if (type ==="c") url += "&log=no";
+        if (al) url += "&alias=true";
+        if (typeof displayed !== 'undefined' ) url += displayed;
+        if (locn === 'undefined' ) locn = s3_d_loc;
+        locn = s3_encfn(locn);
+        while (locn.length > 1999-url.length) locn = locn.substring(0, locn.lastIndexOf(s3_encfn("&")));
+        url += "&location=" + locn;
+        var dg = new Object();
+        dg.tagv = s3_tag_version;
+        dg.tz = 0 - (new Date().getTimezoneOffset());
+        dg.r = s3_encfn(s3_referrer);
+        if (al) dg.aliased = s3_encfn(s3_d_loc.href);
+        dg.title = s3_encfn(document.title);
+        if (screen) {
+            dg.cd=screen.colorDepth;
+            dg.ah=screen.availHeight;
+            dg.aw=screen.availWidth;
+            dg.sh=screen.height;
+            dg.sw=screen.width;
+            dg.pd=screen.pixelDepth;
+        }
+        dg.edx = readCookie('s3edx');
+        for (var key in dg) { 
+            var param = "&" + key + "=" + dg[key];
+            if (url.length + param.length < 2000) url += param;
+            else break;
+        }
+    }
+    else {
+        url += "&dlts=" + s3_time + "&dl=" + (new Date().getTime() - s3_time);
+    }
+    return url;
+}
+
+function s3_get_log_URL_s3log(type, locn, time, displayed) {
+    return s3_get_log_URL(type, locn, time, displayed) + "&s3log=1";
+}
+
+function s3_fixURL(url) {
+    if (url === "") { return s3_d_loc.href }
+    if ((url.substring(0,4) !== 'http') && (url.substring(0,1) !== "/")) { url = s3_d_loc.pathname.substring(0, s3_d_loc.pathname.lastIndexOf('/') + 1) + url }
+    if (url.substring(0,1) === "/") { url = s3_http + s3_d_loc.host + url }
+    return url;
+}
+
+function s3_isAlias(alias) {
+    alias = (typeof alias !== 'undefined' ? alias : (typeof s3_page_alias === 'undefined' ? "" : s3_page_alias));
+    alias = s3_fixURL(alias);
+    if (alias.indexOf("?") > 0) alias = alias.substring(0, alias.indexOf("?"));
+    return (alias !== s3_http + s3_d_loc.host + s3_d_loc.pathname);
+}
+
+function s3_loader() {
+    s3_ud = "undefined";
+    if (s3_logging_active && s3_configured() && (typeof s3_done === 'undefined' || s3_done===false)) {
+        url = s3_fixURL(s3_url);
+        s3_image = new Image();
+        s3_image.name = "s3i";
+        s3_image.onload = function(){s3_sent = true;}
+        s3_image.src = s3_get_log_URL("i", url, s3_time);
+    }
+    s3_done = true;
+}
+
+s3_loader();€x«Áû      X¥~ÍX¥~Í=|^XΩ#   =    :http://scripts.sophus3.com/s3s/dennis/autoexpress/logging.js necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Content-Type: application/x-javascript
+Content-Length: 18740
+Last-Modified: Fri, 28 Oct 2016 09:07:04 GMT
+Etag: "496cffccce9b0bc7131127edf7f510a4"
+Accept-Ranges: bytes
+Date: Mon, 27 Feb 2017 19:31:25 GMT
+Age: 38386
+X-Amz-Cf-Id: jdN7k2yVqnSUAgU_TVUvgPyrSAmQTRK5mqng75sNzeh7VoAI3_oUww==
+x-amz-meta-cb-modifiedtime: Fri, 28 Oct 2016 08:53:12 GMT
+x-amz-version-id: Nwe8yqkjdmJ4H.c0kKIuJZVj5vqxuR2e
+Server: AmazonS3
+X-Cache: Hit from cloudfront
+Via: 1.1 f8674897ecacd3a8677010df79a9b468.cloudfront.net (CloudFront)
+ original-response-headers Content-Type: application/x-javascript
+Content-Length: 18740
+Connection: keep-alive
+Date: Sun, 20 Nov 2016 06:02:59 GMT
+Last-Modified: Fri, 28 Oct 2016 09:07:04 GMT
+Etag: "496cffccce9b0bc7131127edf7f510a4"
+x-amz-meta-cb-modifiedtime: Fri, 28 Oct 2016 08:53:12 GMT
+x-amz-version-id: Nwe8yqkjdmJ4H.c0kKIuJZVj5vqxuR2e
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 19047
+X-Cache: Hit from cloudfront
+Via: 1.1 0eab76ce53b41f34576485a06933533e.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: IECjxFS4pm7pO8qcbq8dgd9G9xNuRNwZdpx875a0-ZKeKevuUFeavQ==
+ uncompressed-len 0   I4
