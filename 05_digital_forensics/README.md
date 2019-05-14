@@ -14,7 +14,7 @@ In the morning session we will look briefly at what the Digital Forensics proces
 We will then look at the forensic traces left by Web browsers for a mock investigation.
 * Morning Presentation (PDF): [morning_presentation.pdf](morning_presentation.pdf)
 * Morning Lab sheet (Word docx): [morning_labsheet.docx](morning_labsheet.docx)
-* Morning Evidence (Zip): [morning_evidence.zip](https://livenapierac-my.sharepoint.com/:u:/r/personal/40223190_live_napier_ac_uk/Documents/morning_evidence.zip?csf=1&e=bkhn8Y)
+* Morning Evidence (Zip): [morning_evidence.zip](https://www.dropbox.com/s/yfvhpypq6gr2tp9/morning_evidence.zip?dl=1)
 
 
 ## Afternoon Session
