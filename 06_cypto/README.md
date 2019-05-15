@@ -10,6 +10,8 @@ The key learning outcomes of this unit are:
 ## Morning Session
 This will investigate the usage of ciphers.
 
+Introduction to ciphers. Here is the <a href="https://asecuritysite.com/challenges" target="_blank">Challenge</a>.
+
 ## Afternoon Session
 This will investigate encryption methods.
 
