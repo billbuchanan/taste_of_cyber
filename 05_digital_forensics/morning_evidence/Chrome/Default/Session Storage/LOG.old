@@ -1,0 +1,24 @@
+2017/03/26-13:17:51.996 6916 Reusing MANIFEST C:\Users\Arnie\AppData\Local\Google\Chrome\User Data\Default\Session Storage/MANIFEST-000001
+2017/03/26-13:17:52.042 6916 Recovering log #198
+2017/03/26-13:17:52.042 6916 Reusing old log C:\Users\Arnie\AppData\Local\Google\Chrome\User Data\Default\Session Storage/000198.log 
+2017/03/26-13:19:35.927 5500 Level-0 table #202: started
+2017/03/26-13:19:36.088 5500 Level-0 table #202: 24328 bytes OK
+2017/03/26-13:19:36.113 5500 Delete type=0 #198
+2017/03/26-13:19:36.113 5500 Compacting 4@0 + 1@1 files
+2017/03/26-13:19:36.457 5500 Generated table #203@0: 4257 keys, 76691 bytes
+2017/03/26-13:19:36.457 5500 Compacted 4@0 + 1@1 files => 76691 bytes
+2017/03/26-13:19:36.457 5500 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/03/26-13:19:36.458 5500 Delete type=2 #192
+2017/03/26-13:19:36.475 5500 Delete type=2 #194
+2017/03/26-13:19:36.476 5500 Delete type=2 #197
+2017/03/26-13:19:36.476 5500 Delete type=2 #199
+2017/03/26-13:19:36.477 5500 Delete type=2 #202
+2017/03/26-13:20:31.950 5500 Level-0 table #205: started
+2017/03/26-13:20:32.053 5500 Level-0 table #205: 116747 bytes OK
+2017/03/26-13:20:32.178 5500 Delete type=0 #201
+2017/03/26-13:29:40.589 5500 Level-0 table #207: started
+2017/03/26-13:29:40.605 5500 Level-0 table #207: 137633 bytes OK
+2017/03/26-13:29:40.605 5500 Delete type=0 #204
+2017/03/26-13:32:42.365 5500 Level-0 table #209: started
+2017/03/26-13:32:42.373 5500 Level-0 table #209: 68919 bytes OK
+2017/03/26-13:32:42.378 5500 Delete type=0 #206
