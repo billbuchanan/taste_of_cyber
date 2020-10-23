@@ -1,6 +1,6 @@
 # A Taste of Cyber
 ## Details
-Room: D10, Merchiston
+10-12pm, 1:30-4pm
 
 ## Course Content
 
@@ -9,7 +9,7 @@ Room: D10, Merchiston
 3. Thursday 26 November 2020: Open Source Intelligence. Basil.
 4. Tuesday 1 December 2020: Cryptography & Ciphers. Bill/Adrian.
 5. Thursday 3 December 2020: Digital Forensics & Digital Evidence. Basil.
-6. Tuesday 8 December 2020. Splunk. Adrian.
+6. Tuesday 8 December 2020. Splunk & Data Analysis. Adrian.
 7. Thursday 10 December 2020. Meet the Experts 
 8. Tuesday. 15 December 2020. Cyber Security & Machine Learning. Bill/Adrian.
 9. Wednesday 24 Feb 2021 Careers Event. 
