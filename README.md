@@ -5,11 +5,11 @@ Room: D10, Merchiston
 ## Course Content
 
 1. Thursday 19 November 2020. Intrduction to Cyber Threats and Cyber Security. Basil. [Link]( https://github.com/billbuchanan/taste_of_cyber/tree/master/01_introduction).
-2. Tuesday 24 November 2020: Introduction to computer networks & network security. Adrian.
-3. Thursday 26 November 2020: Open Source Intelligence. Basil..
+2. Tuesday 24 November 2020: Introduction to computer networks and network security. Adrian.
+3. Thursday 26 November 2020: Open Source Intelligence. Basil.
 4. Tuesday 1 December 2020: Cryptography & Ciphers. Bill/Adrian.
 5. Thursday 3 December 2020: Digital Forensics & Digital Evidence. Basil.
-6. Tuesday 8 December 2020. Adrian.
+6. Tuesday 8 December 2020. Splunk. Adrian.
 7. Thursday 10 December 2020. Meet the Experts 
 8. Tuesday. 15 December 2020. Cyber Security & Machine Learning. Bill/Adrian.
 9. Wednesday 24 Feb 2021 Careers Event. 
