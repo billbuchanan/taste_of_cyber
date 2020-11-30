@@ -1,0 +1,18 @@
+2017/03/31-18:24:40.762 5788 Reusing MANIFEST C:\Users\Arnie\AppData\Local\Google\Chrome\User Data\Default\Session Storage/MANIFEST-000001
+2017/03/31-18:24:41.163 5788 Recovering log #208
+2017/03/31-18:24:41.164 5788 Reusing old log C:\Users\Arnie\AppData\Local\Google\Chrome\User Data\Default\Session Storage/000208.log 
+2017/03/31-18:26:14.989 5148 Level-0 table #212: started
+2017/03/31-18:26:15.014 5148 Level-0 table #212: 119328 bytes OK
+2017/03/31-18:26:15.119 5148 Delete type=0 #208
+2017/03/31-18:26:15.120 5148 Compacting 4@0 + 1@1 files
+2017/03/31-18:26:15.614 5148 Generated table #213@0: 4492 keys, 175671 bytes
+2017/03/31-18:26:15.614 5148 Compacted 4@0 + 1@1 files => 175671 bytes
+2017/03/31-18:26:15.695 5148 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/03/31-18:26:15.764 5148 Delete type=2 #203
+2017/03/31-18:26:15.764 5148 Delete type=2 #205
+2017/03/31-18:26:15.765 5148 Delete type=2 #207
+2017/03/31-18:26:15.766 5148 Delete type=2 #209
+2017/03/31-18:26:15.766 5148 Delete type=2 #212
+2017/03/31-18:29:30.198 5148 Level-0 table #215: started
+2017/03/31-18:29:30.228 5148 Level-0 table #215: 106620 bytes OK
+2017/03/31-18:29:30.242 5148 Delete type=0 #211

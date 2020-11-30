@@ -1,0 +1,66 @@
+{
+   "checksum": "fd6c68265af0ade71ce5166215dce577",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13132501758638829",
+            "id": "6",
+            "meta_info": {
+               "last_visited_desktop": "13132501758639829"
+            },
+            "name": "Theft Act 1968",
+            "type": "url",
+            "url": "http://www.legislation.gov.uk/ukpga/1968/60"
+         }, {
+            "date_added": "13132501864208699",
+            "id": "7",
+            "meta_info": {
+               "last_visited_desktop": "13132501982909829"
+            },
+            "name": "The 10 Most Wanted Cars Of 2016 - TheRichest",
+            "type": "url",
+            "url": "http://www.therichest.com/luxury/auto/the-10-most-wanted-cars-of-2016/"
+         }, {
+            "date_added": "13132875242213606",
+            "id": "10",
+            "meta_info": {
+               "last_visited_desktop": "13132875243222286"
+            },
+            "name": "Facebook",
+            "type": "url",
+            "url": "https://www.facebook.com/?ref=logo"
+         }, {
+            "date_added": "13135454798186875",
+            "id": "13",
+            "meta_info": {
+               "last_visited_desktop": "13135454798188291"
+            },
+            "name": "Cheap Flights from Scotland to Mexico City - Cheapflights.co.uk",
+            "type": "url",
+            "url": "https://www.cheapflights.co.uk/flights/Mexico-City/Scotland/"
+         } ],
+         "date_added": "13132501675336569",
+         "date_modified": "13135454798186875",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13132501675336569",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13132501675336569",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
