@@ -35,9 +35,45 @@ Here is the semaphore code:
 
 ![quiz](https://asecuritysite.com/public/qmary.png)
 
-## 5. Can you find the Scottish town or city for this cipher:
+## 5. Can you find the Scottish town or city for this cipher (shifted alphabet - either one shift, two shifts or three shifts):
 
 NKXKPIUVQP
+
+For a 1 letter shift:
+
+```
+abcdefghijklmnopqrstuvwxyz
+BCDEFGHIJKLMNOPQRSTUVWXYZA
+```
+
+for two shifts:
+```
+abcdefghijklmnopqrstuvwxyz
+CDEFGHIJKLMNOPQRSTUVWXYZAB
+```
+
+and three shifts:
+```
+abcdefghijklmnopqrstuvwxyz
+DEFGHIJKLMNOPQRSTUVWXYZABC
+```
+## 6.  Can you find the Scottish town or city for this cipher (ROT13):
+
+Oryyfuvyy
+
+Rot13 Cipher, which is a Caeser cipher with a shift of 13 spaces:
+```
+abcdefghijklmnopqrstuvwxyz
+NOPQRSTUVWXYZABCDEFGHIJKLM
+```
+
+## 6.  Can you find the Scottish town or city for this cipher (Morse):
+
+(....) (.- --) (..) (.-..) (-) (---) (-.) 
+
+
+
+
 
 
 
