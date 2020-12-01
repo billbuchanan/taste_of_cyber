@@ -4,6 +4,7 @@ This topic is presented by Bill Buchanan.
 ## Learning Outcomes
 The key learning outcomes of this unit are:
 
+* Introduction to Cybersecurity.
 * Understand how to crack a range of ciphers.
 * Understand how encryption is used to protect data.
 
