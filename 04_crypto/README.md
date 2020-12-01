@@ -12,7 +12,7 @@ This will investigate the usage of ciphers.
 
 * A: Presentation on cybersecurity.
 * B. What is your password? Here is the [Quiz](https://www.menti.com/453d44h63a")
-* C. Some ciphers. Here is the [Challenge]https://github.com/billbuchanan/taste_of_cyber/blob/master/04_crypto/quizzes/cipher_quiz_final.docx?raw=true)
+* C. Some ciphers. Here is the [Challenge](https://github.com/billbuchanan/taste_of_cyber/blob/master/04_crypto/quizzes/cipher_quiz_final.docx?raw=true)
 * D. Can you crack these Caeser ciphers. [Here](http://asecuritysite.com/tests/tests?sortBy=caesar)
 
 ## Afternoon Session (Encryption)
