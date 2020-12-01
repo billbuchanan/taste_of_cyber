@@ -25,7 +25,7 @@ Here is the semaphore code:
 
 ## Can you find the Scottish town or city for this cipher:
 
-![quiz](https://asecuritysite.com/public/quiz03.png | height = 100px)
+![quiz](https://asecuritysite.com/public/quiz03.png | height = 10px)
 
 
 
