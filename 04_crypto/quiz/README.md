@@ -1,6 +1,6 @@
 # Cipher quiz
 
-## Can you find the Scottish town or city for this cipher:
+## 1. Can you find the Scottish town or city for this cipher:
 
 %65 %64 %69 %6E %62 %75 %72 %67 %68
 
@@ -15,7 +15,7 @@ u (%75) v (%76) w (%77) x (%78) y (%79)
 z (%80) SPACE (%20)
 ```
 
-## Can you find the Scottish town or city for this cipher:
+## 2. Can you find the Scottish town or city for this cipher:
 
 ![quiz](https://asecuritysite.com/public/quiz02.png)
 
@@ -23,21 +23,19 @@ Here is the semaphore code:
 
 ![quiz](https://asecuritysite.com/public/qflags.png)
 
-## Can you find the Scottish town or city for this cipher:
+## 3. Can you find the Scottish town or city for this cipher:
 
-![quiz](https://asecuritysite.com/public/quiz03.png | height = 10px)
-
-
+<img src="https://asecuritysite.com/public/quiz03.png width="500px">
 
 ![quiz](https://asecuritysite.com/public/qpigpen.png)
 
-## Can you find the Scottish town or city for this cipher:
+## 4. Can you find the Scottish town or city for this cipher:
 
 ![quiz](https://asecuritysite.com/public/quiz04.png)
 
 ![quiz](https://asecuritysite.com/public/qmary.png)
 
-## Can you find the Scottish town or city for this cipher:
+## 5. Can you find the Scottish town or city for this cipher:
 
 NKXKPIUVQP
 
