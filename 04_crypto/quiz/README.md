@@ -18,3 +18,27 @@ z (%80) SPACE (%20)
 ## Can you find the Scottish town or city for this cipher:
 
 ![quiz](https://asecuritysite.com/public/quiz02.png)
+
+Here is the semaphore code:
+
+![quiz](https://asecuritysite.com/public/qflags.png)
+
+## Can you find the Scottish town or city for this cipher:
+
+![quiz](https://asecuritysite.com/public/quiz03.png)
+
+![quiz](https://asecuritysite.com/public/qpigpen.png)
+
+## Can you find the Scottish town or city for this cipher:
+
+![quiz](https://asecuritysite.com/public/quiz04.png)
+
+![quiz](https://asecuritysite.com/public/qmary.png)
+
+## Can you find the Scottish town or city for this cipher:
+
+NKXKPIUVQP
+
+
+
+
