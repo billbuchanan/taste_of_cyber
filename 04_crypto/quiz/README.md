@@ -15,3 +15,6 @@ u (%75) v (%76) w (%77) x (%78) y (%79)
 z (%80) SPACE (%20)
 ```
 
+## Can you find the Scottish town or city for this cipher:
+
+![quiz](https://asecuritysite.com/public/quiz02.png)
