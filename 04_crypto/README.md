@@ -12,7 +12,7 @@ This will investigate the usage of ciphers.
 
 * A: Presentation on cybersecurity.
 * B. What is your password? Here is the [Challenge](https://www.menti.com/453d44h63a")
-* C. Introduction to ciphers. Here is the [Challenge](https://asecuritysite.com/challenges")
+* C. Some ciphers. Here is the [Challenge](https://github.com/billbuchanan/taste_of_cyber/tree/master/04_crypto/quiz)
 * D. Can you crack these Caeser ciphers. [Here](http://asecuritysite.com/tests/tests?sortBy=caesar)
 
 
@@ -20,5 +20,9 @@ This will investigate the usage of ciphers.
 This will investigate encryption methods.
 
 Test 2: https://www.mentimeter.com/s/48ea9798d9dac80d3ad8d3c1f1093888/0885d563422f
+
+Now take the mega challenge:
+
+* A. Introduction to ciphers. Here is the [Challenge](https://asecuritysite.com/challenges")
 
 
