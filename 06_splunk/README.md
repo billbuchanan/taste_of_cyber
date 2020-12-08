@@ -20,7 +20,7 @@ Before we cover Splunk, let's look at some of the basics of network protocols.
 * Test [here](https://asecuritysite.com/tests/tests?sortby=siem).
 
 ### Tutorials
-* Tutorial 1: [here](https://asecuritysite.com/public/splunk01.pdf).
+* Tutorial 1: [PDF Version](https://asecuritysite.com/public/splunk01.pdf) [Word version](https://github.com/billbuchanan/taste_of_cyber/blob/master/06_splunk/splunk01.docx).
 * Tutorial 2: [here](https://asecuritysite.com/public/splunk02.pdf).
 
 Interesting in learning more about Splunk? Click [here](https://asecuritysite.com/cyberdata/).
