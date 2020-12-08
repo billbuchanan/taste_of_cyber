@@ -6,9 +6,6 @@ The key objectives of this unit are to:
 * Understand how to perform a search with SPL (Search Processing Language) in Splunk.
 * Understand how to perform key searches within a data set.
 
-## Presentation
-[![](http://img.youtube.com/vi/bOQmd6B8jGo/0.jpg)](http://www.youtube.com/watch?v=bOQmd6B8jGo "Introduction to Splunk")
-
 ## Content
 
 * Slides (Introduction to Splunk): [here](https://asecuritysite.com/public/ch12_splunk.pdf).
@@ -16,6 +13,8 @@ The key objectives of this unit are to:
 * Tutorial 1: [here](https://asecuritysite.com/public/splunk01.pdf).
 * Test [here](https://asecuritysite.com/tests/tests?sortby=siem).
 * Tutorial 2: [here](https://asecuritysite.com/public/splunk02.pdf).
+
+Interesting in learning more about Splunk? Click [here](https://asecuritysite.com/cyberdata/).
 
 ## Outline
 
