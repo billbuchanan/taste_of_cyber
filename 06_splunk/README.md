@@ -6,12 +6,21 @@ The key objectives of this unit are to:
 * Understand how to perform a search with SPL (Search Processing Language) in Splunk.
 * Understand how to perform key searches within a data set.
 
+## Background
+Before we cover Splunk, let's look at some of the basics of network protocols.
+
+* Slides (Network Protocols): [here](https://asecuritysite.com/public/ch06_networks.pdf).
+* Video: [here](https://www.youtube.com/watch?v=pEfejwf_M80).
+
 ## Content
 
 * Slides (Introduction to Splunk): [here](https://asecuritysite.com/public/ch12_splunk.pdf).
+* Video: [here](https://www.youtube.com/watch?v=bOQmd6B8jGo).
 * Access Splunk [here](https://asecuritysite.com:8000/). 
-* Tutorial 1: [here](https://asecuritysite.com/public/splunk01.pdf).
 * Test [here](https://asecuritysite.com/tests/tests?sortby=siem).
+
+### Tutorials
+* Tutorial 1: [here](https://asecuritysite.com/public/splunk01.pdf).
 * Tutorial 2: [here](https://asecuritysite.com/public/splunk02.pdf).
 
 Interesting in learning more about Splunk? Click [here](https://asecuritysite.com/cyberdata/).
