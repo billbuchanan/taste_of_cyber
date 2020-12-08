@@ -12,8 +12,8 @@ The key objectives of this unit are to:
 ## Content
 
 * Slides (Introduction to Splunk): [here](https://asecuritysite.com/public/ch12_splunk.pdf).
-* Tutorial 1: [here](https://asecuritysite.com/public/splunk01.pdf)
-* Access Splunk [here](https://asecuritysite.com:8000/). Contact support@asecuritysite.com for a login.
+* Access Splunk [here](https://asecuritysite.com:8000/). 
+* Tutorial 1: [here](https://asecuritysite.com/public/splunk01.pdf).
 * Test [here](https://asecuritysite.com/tests/tests?sortby=siem).
 * Tutorial 2: [here](https://asecuritysite.com/public/splunk02.pdf).
 
